@@ -1,0 +1,497 @@
+
+body {
+  margin: 0;
+  font-size: 70%;
+  font-family: 'Nunito', sans-serif;
+  }
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #f0dbc7;
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+  }
+
+
+   /* STYLING AF SCROLLBAR */   
+   
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f0dbc7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ff8f1e;
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff8f1e;
+    border-radius: 15px;
+  }  
+
+/* STYLING AF HEADER */
+
+  .topnav {
+      overflow: hidden;
+      background-color: #e3d7c5;
+      width: 100%;
+      position: relative;
+    }
+
+    .logo {
+      width: 100%;
+      padding: 10px;
+      margin-top: 2%;
+      margin-left: 2%;
+    }
+
+    img.logo {
+      width: 15%;
+      height: 15%;
+    }
+    
+    .topnav #mylinks {
+      float: right;
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      list-style-type: none;
+      display: inline-block;
+      line-height: 5;
+      margin: 0 10px;
+      }
+  
+    .topnav ul li a{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+  
+    .checkbtn{
+      font-size: 30px;
+      color: #ff8f1e;
+      float: right;
+      line-height: 90px;
+      margin-right: 30px;
+      cursor: pointer;
+    
+    }
+  
+    #check{
+      display: none;
+    }
+  
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #e3d7c5;
+      top: 90px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  
+  ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  
+  .topnav ul li a:hover{
+    color: black;
+    transition: .5s;
+    width: 480px;
+  }
+  
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+ 
+    
+    /* STYLING AF MAIN */
+
+      .light img {
+        width: 95%;
+        height: 80%;
+      }
+
+      .info1 img {
+        width: 95%;
+        height: 80%;
+      }
+
+      h1 {
+        color: #ff8f1e;
+        text-align: center;
+        font-size: 150%;
+      }
+
+
+      .info1 {
+
+        padding-top: 2%;
+        text-align: center;
+      }
+
+      .info2 {
+        padding-top: 2%;
+        text-align: center;
+        padding-bottom: 2%;
+        background-color: #e3d7c5;
+      }
+
+      .info2 h2 {
+        font-weight: normal;
+        font-size: 20px;
+      }
+
+
+      .mobile1 h2 {
+        font-weight: normal;
+        font-size: 20px;
+      }
+
+      .squash p {
+        font-weight: normal;
+        font-size: 12px;
+      }
+
+      .light p {
+        font-weight: normal;
+        font-size: 12px;
+      }
+
+      .light h2 {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      .mobile-info2 {
+        display: none;
+      }
+
+
+
+   /* STYLING AF FOOTER */
+
+  footer {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+    .footer-logo img {
+        width: 90px;
+        height: 40px;
+    }
+
+    .footer-logo h2 {
+        font-size: 9px;
+    }
+
+    h6 {
+        padding-top: 20px;
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    
+      footer p {
+        font-style: italic;
+      }
+    
+      .follow {
+        padding-left: 0;
+    
+      }
+    
+      .socials a{
+        display: inline-block;
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        background: #00000021;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        color: #000000;
+        transition: all 0.3s ease;
+      }
+      
+      .socials a:hover{
+        color: #e3d7c5;
+        background-color:#000000;
+      
+      }
+
+    
+
+ 
+
+    /* FØRSTE BREAKPOINT */
+      @media screen and (min-width: 480px) {
+
+
+        .mobile-container {
+          max-width: 768px;
+          margin: 0;
+          border-radius: 10px;
+        }
+    
+        img.logo {
+          width: 15%;
+          height: 15%;
+        }
+    
+    
+       body {
+        font-size: 20px;
+       }
+    
+      
+       ul {
+        transition: none;
+      }
+
+
+    
+      }
+
+      /* ANDET BREAKPOINT */
+    
+      @media screen and (min-width: 768px) {
+    
+        .mobile-container {
+          max-width: 1024px;
+          margin: auto;
+          border-radius: 10px;
+    
+    
+        }
+    
+        img.logo {
+          width: 15%;
+          height: 15%;
+        }
+    
+        .checkbtn { 
+          display: none;
+        }
+    
+    
+        #mylinks {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: sticky;
+          float: right;
+          margin-right: 10%;
+          background: none;
+          transition: none;
+          width: 500px;
+          height: 0;
+          top: 50%;
+          left: 35%;
+         
+        }
+    
+        #mylinks{
+          right: 20px;
+        }
+      
+    
+        .topnav ul li a:hover{
+          color: #ff8f1e;
+          transition: .5s;
+          
+        }
+
+  
+        .info2 img {
+          width: 90%;
+          height: 75%;
+        }
+
+
+        .info2 p {
+          font-size: 15px;
+        }
+
+
+        .info2 h2 {
+          margin-bottom: 80px;
+        }
+
+
+        .info2 {
+          background-color: #e3d7c5;
+        }
+
+        .info2 {
+          display: none;
+        }
+
+        .mobile-info2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+
+        .mobile-info2 {
+          padding-top: 2%;
+          text-align: center;
+          padding-bottom: 2%;
+          background-color: #e3d7c5;
+        }
+  
+        .mobile-info2 h2 {
+          font-weight: normal;
+          font-size: 20px;
+          text-align: center;
+          margin-right: 25px;
+          margin-top: 20%;
+
+        }
+
+        .mobile-info2 p {
+          font-size: 18px;
+          padding-left: 60px;
+          text-align: center;
+          margin-right: 40px;
+
+        }
+
+        .mobile-info2 img {
+          width: 90%;
+          height: 80%;
+          margin-left: 10%;
+          margin-top: 5%;
+        }
+
+
+        .info1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+
+        .info1 {
+          padding-top: 2%;
+          text-align: center;
+          background-color: #f0dbc7;
+        }
+  
+        .mobile1 h2 {
+          font-weight: normal;
+          font-size: 20px;
+          margin-left: 25px;
+          margin-top: 20%;
+
+
+        }
+
+        .squash p {
+          font-size: 18px;
+          padding-right: 60px;
+          margin-left: 40px;
+          padding-bottom: 10%;
+
+        }
+
+        .info1 img {
+          width: 90%;
+          height: 80%;
+          margin-right: 10%;
+          margin-top: 5%;
+        }
+  
+
+        .kontakt p {
+          padding-bottom: 20%;
+
+        }
+
+        .menu p {
+          padding-bottom: 20%;
+
+        }
+    
+        }
+    
+      /* TREDJE BREAKPOINT */
+
+        @media screen and (min-width: 1024px) {
+    
+          .mobile-container {
+            max-width: 1200px;
+            margin: auto;
+            border-radius: 10px;
+          }
+          
+          body {
+            font-size: 24px;
+          }
+  
+          h2 {
+            font-size: 60px;
+          }
+
+          img.logo {
+            width: 10%;
+            height: 10%;
+          }
+      
+    
+          footer {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+
+
+    
+      }
+
+  /* FJERDE BREAKPOINT */
+    
+      @media screen and (min-width: 1200px) {
+    
+        
+        .mobile-container {
+          max-width: none;
+          width: 100%;
+          margin: auto;
+          border-radius: 10px;
+          
+        }
+    
+        .topnav ul li a {
+          font-size: 18px;
+        }
+    
+    
+        body {
+          font-size: 30px;
+        }
+      
+        .logo {
+          width: 100px;
+        }
+
+    
+      }
+    
