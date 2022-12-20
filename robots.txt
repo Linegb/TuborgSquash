@@ -1,4 +1,0 @@
-user-agent: *
-Disallow: /
-
-Sitemap: http://tuborgsquash.linelearn.dk/sitemap.xml
