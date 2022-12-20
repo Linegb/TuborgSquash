@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    font-size: 70%;
+    font-family: 'Nunito', sans-serif;
+    
+    }
+    
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #f0dbc7;
+      color: black;
+      border-radius: 10px;
+      font-weight: normal;
+    }
+
+   /* STYLING AF SCROLLBAR */   
+   
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f0dbc7;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #ff8f1e;
+      border-radius: 15px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff8f1e;
+      border-radius: 15px;
+    }
+
+
+
+  
+
+  /* STYLING AF HEADER */
+
+    .topnav {
+        overflow: hidden;
+        background-color: #e3d7c5;
+        width: 100%;
+        position: relative;
+      }
+  
+      .logo {
+        width: 100%;
+        padding: 10px;
+        margin-top: 2%;
+        margin-left: 2%;
+      }
+
+      img.logo {
+        width: 15%;
+        height: 15%;
+      }
+      
+      .topnav #mylinks {
+        float: right;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 5;
+        margin: 0 10px;
+        }
+    
+      .topnav ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 20px;
+      }
+    
+      .checkbtn{
+        font-size: 30px;
+        color: #ff8f1e;
+        float: right;
+        line-height: 75px;
+        margin-right: 30px;
+        cursor: pointer;
+      
+      }
+    
+      #check{
+        display: none;
+      }
+    
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #e3d7c5;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+    
+    ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    
+    .topnav ul li a:hover{
+      color: #e3d7c5;
+      transition: .5s;
+      width: 480px;
+    }
+    
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+
+
+    /* STYLING AF MAIN */
+
+      h1 {
+        text-align: center;
+        color: #ff8f1e;
+        padding-bottom: 5%;
+        font-size: 140%;
+      }
+
+      .om1 {
+        padding-bottom: 5%;
+        text-align: center;
+        font-size: 10px;
+
+      }
+
+      .motto {
+        background-color: #e3d7c5;
+        padding-top: 5%;
+
+      }
+
+      .motto h2 {
+        padding-left: 20%;
+        color: #ff8f1e;
+        padding-top: 25%;
+        font-size: 15px;
+      }
+
+      .om2 {
+        padding-top: 5%;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .om2 h3 {
+        font-weight: normal;
+      }
+
+      .om1 p {
+        font-weight: normal;
+        font-size: 13px;
+      }
+
+      .om2 p {
+        font-weight: normal;
+        font-size: 13px;
+      }
+
+
+      .om2 h3 {
+        font-weight: normal;
+        font-size: 13px;
+      }
+
+      .motto img {
+        width: 60%;
+        height: 90%;
+        padding-left: 3%;
+    
+      }
+
+      .motto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 6%;
+      }
+
+
+
+
+         /* STYLING AF FOOTER */
+
+  footer {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+    .footer-logo img {
+        width: 90px;
+        height: 40px;
+    }
+
+    .footer-logo h2 {
+        font-size: 9px;
+    }
+
+    h6 {
+        padding-top: 20px;
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    
+      footer p {
+        font-style: italic;
+      }
+    
+      .follow {
+        padding-left: 0;
+    
+      }
+    
+      .socials a{
+        display: inline-block;
+        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        background: #00000021;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        color: #000000;
+        transition: all 0.3s ease;
+      }
+      
+      .socials a:hover{
+        color: #e3d7c5;
+        background-color:#000000;
+      
+      }
+
+
+
+        /* FØRSTE BREAKPOINT */
+
+      @media screen and (min-width: 480px) {
+
+
+        .mobile-container {
+          max-width: 768px;
+          margin: 0;
+          border-radius: 10px;
+        }
+    
+        img.logo {
+          width: 15%;
+          height: 15%;
+        }    
+    
+       body {
+        font-size: 20px;
+       }
+    
+      
+       ul {
+        transition: none;
+      }
+
+      .motto h2 {
+        font-size: 15px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        margin-bottom: 10px;
+      }
+    
+      }
+
+   /* ANDET BREAKPOINT */
+    
+      @media screen and (min-width: 768px) {
+    
+        .mobile-container {
+          max-width: 1024px;
+          margin: auto;
+          border-radius: 10px;
+    
+    
+        }
+    
+        img.logo {
+          width: 15%;
+          height: 15%;
+        }
+
+        .topnav ul li a {
+          font-size: 18px;
+        }
+
+        .checkbtn { 
+          display: none;
+        }
+    
+    
+        #mylinks {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: sticky;
+          float: right;
+          margin-right: 10%;
+          background: none;
+          transition: none;
+          width: 500px;
+          height: 0;
+          top: 50%;
+          left: 35%;
+         
+        }
+    
+        #mylinks{
+          right: 20px;
+        }
+      
+    
+        .topnav ul li a:hover{
+          color: #ff8f1e;
+          transition: .5s;
+          
+        }
+    
+        section.konkurrence {
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 10px;
+        
+      }
+
+
+      .om1 p {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      .om2 p {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+
+      .om2 h3 {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      .motto h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        margin-bottom: 10px;
+      }
+    
+        }
+    
+      /* TREDJE BREAKPOINT */  
+        @media screen and (min-width: 1024px) {
+    
+          .mobile-container {
+            max-width: 1200px;
+            margin: auto;
+            border-radius: 10px;
+          }
+
+          img.logo {
+            width: 10%;
+            height: 10%;
+          }
+          
+          body {
+            font-size: 24px;
+          }
+  
+          h2 {
+            font-size: 60px;
+          }
+      
+    
+          footer {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+
+          .motto img {
+            width: 50%;
+            height: 90%;
+          }
+
+          .motto h2 {
+            font-size: 35px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+          }
+    
+      }
+    
+  /* FJERDE BREAKPOINT */
+      @media screen and (min-width: 1200px) {
+    
+        
+        .mobile-container {
+          max-width: none;
+          width: 100%;
+          margin: auto;
+          border-radius: 10px;
+          
+        }
+    
+        .topnav ul li a {
+          font-size: 18px;
+        }
+    
+    
+        body {
+          font-size: 30px;
+        }
+      
+      
+        img.logo {
+          width: 10%;
+          height: 80%;
+          margin-top: -10px;
+          margin-top: 5px;
+        }
+    
+        .om1 p {
+          font-weight: normal;
+          font-size: 18px;
+        }
+  
+        .om2 p {
+          font-weight: normal;
+          font-size: 18px;
+        }
+  
+  
+        .om2 h3 {
+          font-weight: normal;
+          font-size: 18px;
+        }
+       
+        .motto h2 {
+          font-size: 40px;
+          padding-bottom: 5px;
+          padding-right: 5px;
+        }
+
+        nav.topnav {
+          height: 90px;
+        }
+    
+      }
+    
